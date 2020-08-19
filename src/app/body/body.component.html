@@ -1,0 +1,38 @@
+<section class="container-fluid">
+    <div class="row">
+        <div class="offset-md-1 col-md-7 mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <app-post *ngIf="loggedIn"></app-post>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <app-blog-section></app-blog-section>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 container pl-5 pr-5">
+            <div class="sticky-top pt-3">
+                <div class="border pl-5 pr-5 pt-3 pb-3 text-justify" style="border-radius: 1em;">
+                    <h2>Desclaimer:</h2>
+                    <p>
+                        This website provides a service to it's web site owners.</p>
+                    <p>
+                        The owner of this website is not responsible for, and expressly disclaims all liability for,
+                        damages
+                        of any kind arising out of use, reference to, or reliance on any information contained within
+                        the
+                        site. While the information contained within the site is periodically updated, no guarantee is
+                        given
+                        that the information provided in this web site is correct,complete, and up-to-date.
+                    </p>
+                    <p>
+                        This site is made purely for education purpose and use of this website for any other means is
+                        strictly condemned.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light border-bottom">
+    <!-- <a class="navbar-brand" href="#"><sub><b style="color:#F05E23;font-size: 2em;">J</b><b style="color:blue;font-size: 2em;">K</b></sub><b style="color:blue">net</b></a> -->
+    <img src='assets/jknet.png' alt="jknet logo" style="min-width:100px;width:10%;margin-left:5%;"/>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <button *ngIf="!loggedIn" class="btn btn-outline-primary" data-toggle="modal" data-target="#loginForm">Login</button>
+      <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+
+      <!-- modal login form -->
+      <div class="modal fade" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+                <app-login-form></app-login-form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <button *ngIf="loggedIn" (click)="logOut()" class="btn btn-outline-warning">Logout</button>
+
+    </div>
+  </nav>
